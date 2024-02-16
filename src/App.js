@@ -3,6 +3,7 @@ import Home from './Home';
 import Navbar from './Navbar';
 import Create from './Create';
 import DetailsBlog from './DetailsBlog';
+import NotFound from './NotFound';
 
 
 
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path  ="/blogs/:id">
             <DetailsBlog />
+            </Route>
+            <Route path = '*'>
+              <NotFound />
             </Route>
          </Switch>
         </div>
